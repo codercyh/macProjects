@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <router-link to="/"><el-button>去home组件</el-button></router-link>
-    <router-link to="/about"><el-button type='info'>去about组件</el-button></router-link>
     <router-view></router-view>
   </div>
 </template>

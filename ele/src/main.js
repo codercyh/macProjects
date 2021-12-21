@@ -6,13 +6,20 @@ import store from './store'
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
 
-import {Button,Select} from 'element-ui'
+import {Button,Select,Container,Aside, Header, Main,Menu,MenuItem,MenuItemGroup,Submenu} from 'element-ui'
 
 Vue.config.productionTip = false
-// Vue.use(ElementUI)
+//按需引入需要的组件
 Vue.component(Button.name,Button)
-Vue.use(Select)
-// Vue.component(Select.name,Select)
+Vue.component(Select.name,Select)
+Vue.component(Container.name,Container)
+Vue.component(Aside.name,Aside)
+Vue.component(Header.name,Header)
+Vue.component(Main.name,Main)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(MenuItemGroup)
+Vue.use(Submenu)
 new Vue({
   router,
   store,
