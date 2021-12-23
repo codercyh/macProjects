@@ -1,6 +1,8 @@
 <template>
   <div>
     <Header></Header>
+    <!-- 路由组件出口 -->
+    <router-view></router-view>
     <Footer></Footer>
   </div>
 </template>
